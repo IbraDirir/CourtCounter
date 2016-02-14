@@ -9,7 +9,7 @@ public class MainActivity extends AppCompatActivity {
 
         int scoreTeamA = 0;
         int scoreTeamB = 0;
-        int reset = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,11 +17,12 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamA(0);
     }
 
-    public void ResetGame(View v){
-        scoreTeamA = reset;
-        scoreTeamB = reset;
-        displayForTeamA(reset);
-        displayForTeamB(reset);
+    public void ResetScore(View v){
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
+
     }
     /**
      * increase the score for team  A by 3
